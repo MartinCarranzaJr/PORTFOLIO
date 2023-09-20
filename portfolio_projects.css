@@ -30,7 +30,7 @@
 }
 
 .project a {
-    color: [tu_color_de_enlace]; /* El color que desees para los enlaces */
+    color:green; /* El color que desees para los enlaces */
     text-decoration: none; /* Elimina el subrayado */
     display: block; /* Hace que el enlace sea un bloque */
     margin-top: 1em; /* Espacio arriba */

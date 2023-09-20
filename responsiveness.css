@@ -1,0 +1,94 @@
+/* Dispositivos pequeños (teléfonos, 600px y menos) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Dispositivos medianos (tablets, 768px y menos) */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Dispositivos grandes (ordenadores/laptops, 992px y menos) */
+@media only screen and (max-width: 992px) {
+
+}
+
+/* Dispositivos extra grandes (pantallas grandes, 1200px y menos) */
+@media only screen and (max-width: 1200px) {
+
+}
+@media (max-width: 480px) {
+    /* Reducción de tamaño de fuentes para adaptarse a móviles */
+    body {
+        font-size: 14px;
+    }
+    
+    header {
+        flex-direction: column; /* Cambia la dirección del flex para apilar elementos */
+        height: auto; /* Permite que el header se adapte al contenido */
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px; /* Ajuste en el espacio entre enlaces */
+    }
+    
+    .info {
+        margin-top: 120px; /* Ajuste para el espacio que ocupa el header */
+    }
+    
+    .about_me {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about_me img {
+        margin: 20px 0; /* Espacio arriba y abajo para separar de otros elementos */
+    }
+    
+    .skills, .hardware-skills {
+        margin-left: 10px;
+    }
+    
+    .project-container {
+        justify-content: center; /* Centrar proyectos en dispositivos móviles */
+    }
+    
+    .project {
+        margin-bottom: 20px; /* Espacio entre proyectos */
+    }
+
+    .contact-details {
+        position: static; /* Evita superponer el contenido en dispositivos móviles */
+        margin-bottom: 20px; 
+    }
+
+    .resume-section {
+        align-items: center; /* Centra el contenido verticalmente */
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 15px; /* Ajuste en el tamaño de la fuente */
+    }
+    
+    .about_me {
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay espacio */
+    }
+
+    .about_me img {
+        margin: 20px; /* Espacio alrededor para separar de otros elementos */
+    }
+    
+    .skills, .hardware-skills {
+        margin-left: 30px; /* Ajuste en el margen izquierdo */
+    }
+
+    .project-container {
+        justify-content: space-around; /* Espacio alrededor de los proyectos */
+    }
+
+    .project {
+        margin: 10px; /* Espacio alrededor de cada proyecto */
+    }
+}
