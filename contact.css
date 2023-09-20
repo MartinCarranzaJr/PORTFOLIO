@@ -1,0 +1,85 @@
+/* Estilos para los enlaces de redes sociales */
+.social-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin-bottom: 10px; 
+}
+
+.social-links a {
+    text-decoration: none;
+    color: inherit; 
+    position: relative;
+    top: 0;
+    transition: top 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #FFD700;  /* Cambia este color al que prefieras para el efecto hover */
+    top: -5px; /* Cambia el valor para ajustar el "salto" */
+}
+.contact {
+    padding: 50px 0;
+    background-color:  #1A1A1A; /* Fondo color carbón */
+    position: relative;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.contact-details {
+    margin-left: 20px;
+    position: absolute;
+    bottom: 20px; /* Esta distancia desde el fondo determinará cuán cerca está del pie de la sección. */
+}
+
+.contact-details, .social-links, .resume-section, .contact-form {
+    margin-bottom: 40px;
+}
+.contact-details p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.social-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links i {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+.resume-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.resume-section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.resume-section button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.resume-section button:hover {
+    background-color: #FFD700;
+}

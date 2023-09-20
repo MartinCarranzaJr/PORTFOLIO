@@ -1,0 +1,95 @@
+/*Seccion About Me */
+.about_me {
+    display: flex; /* Convierte el contenedor en un contenedor flex */
+    padding: 50px 30px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.about_me img {
+    height: 320px;
+    margin-right: 30px; /* Margen a la derecha para crear espacio entre la imagen y el texto */
+    margin-top: 30px;
+}
+.martin-image :hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.about_text {
+    max-width: 700px;
+}
+.about_text h2 {
+    margin-top: 20px;
+    color: #800080; /* Esto es un morado común */
+}
+.about_text p {
+    margin-top: 40px;
+}
+.skills {
+    margin-left: 200px;
+    padding: 20px;
+    background-color: #000000;  /* Color oscuro para que concuerde con la temática */
+    color: #FFF;  /* Texto en blanco para contraste */
+}
+
+.skills h3 {
+    margin-bottom: 10px;
+    color: yellow;  /* Utilizamos amarillo como en la sección anterior */
+}
+
+.skills ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.skills li {
+    padding: 5px 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;  /* Alinea verticalmente el ícono y el texto */
+}
+
+.skills i {
+    margin-right: 10px;  /* Espaciado entre el ícono y el texto */
+    font-size: 20px;
+}
+
+.skills a {
+    color: #FFC0CB;  /* Rosa pálido para los enlaces de certificados */
+    text-decoration: none;  /* Sin subrayado */
+}
+
+.skills a:hover {
+    text-decoration: underline;  /* Subrayado al pasar el cursor */
+}
+.hardware-skills {
+    margin-left: 200px;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #000000;
+    color: #FFF;  /* Texto en blanco para contraste */
+}
+
+.hardware-skills h3 {
+    margin-bottom: 10px;
+    color: #00FFFF;  /* Cian para un poco de variación, pero puedes cambiarlo a amarillo u otro color si prefieres mantener la consistencia. */
+}
+
+.hardware-skills ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.hardware-skills li {
+    padding: 5px 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;  /* Alinea verticalmente el ícono y el texto */
+}
+
+.hardware-skills i {
+    margin-right: 10px;  /* Espaciado entre el ícono y el texto */
+    font-size: 20px;
+}
+#about_me {
+    border-bottom: 1px solid yellow;
+}

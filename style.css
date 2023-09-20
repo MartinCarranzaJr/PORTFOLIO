@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Esto hace que los paddings y borders no afecten el ancho total de un elemento */
+}
+/* Estilos generales para todo el documento */
+body {
+    background-color: #1A1A1A; /* Fondo color carbón */
+    color: #FFF; /* Color de texto blanco para que se lea bien con el fondo oscuro */
+    font-family: 'Poppins', sans-serif; /* Tipo de letra general */
+}
+
+/* Estilos específicos para la sección de portfolio */
+.portfolio {
+    font-family: 'Poppins', sans-serif; /* Tipo de letra general */
+}
+/* Estilos generales para la barra de navegación */
+header {
+    background-color: #000000; /* Color negro */
+    display: flex;
+    justify-content: center; /* Centramos los enlaces en el eje principal */
+    align-items: center; /* Alineamos los ítems al centro en el eje transversal */
+    height: 60px; /* Altura de la barra */
+    padding: 0 20px; /* Espaciado a los lados para que no quede todo pegado */
+    position: fixed;     /* Fijar la posición de la barra de navegación */
+    top: 0;              /* Alinea la barra de navegación en la parte superior de la ventana */
+    left: 0;             /* Alinea la barra de navegación al inicio (izquierda) de la ventana */
+    width: 100%;         /* Hace que la barra de navegación ocupe todo el ancho de la ventana */
+    z-index: 1000;       /* Coloca la barra de navegación por encima de otros elementos */
+}
+/* Evitar que solape con la barra de navegacion */
+.info {
+    margin-top: 60px;   /* Ajusta este valor según la altura de tu barra de navegación */
+    background-image: url('background.jpeg');  /* Fondo de pantalla */
+    background-size: cover;  /* Esto hará que la imagen cubra toda el área de la sección */
+    background-repeat: no-repeat; /* Asegura que la imagen no se repita */
+    background-position: center center; /* Esto centrará la imagen en el centro de la sección */
+    height: 200px;
+    width: 100%;
+}
+/* Ajustes en texto */
+.info h3 {
+    padding-left: 30px;  /* Mueve el texto hacia la derecha. Ajusta este valor como quieras. */
+    padding-top: 20px;   /* Mueve el texto hacia abajo. Ajusta este valor como quieras. */
+    color: yellow;     /* Color de texto */
+}
+.info h1 {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+/* Estilos para los iconos */
+.icons-container {
+    position: absolute;
+    left: 20px; /* Separación desde el lado izquierdo */
+}
+
+.programming-languages i {
+    margin-right: 10px; /* Espacio entre íconos */
+    font-size: 24px; /* Tamaño de los íconos */
+}
+
+/* Estilos para la navegación */
+.about-link {
+    color: #800080; /* Esto es un morado común, puedes ajustarlo según prefieras */
+}
+
+.portfolio-link {
+    color: #FFC0CB; /* Rosa pálido, ajusta según prefieras */
+}
+
+.contact-link {
+    color: #008000; /* Verde, puedes ajustarlo según prefieras */
+}
+
+nav ul {
+    display: flex;
+    gap: 20px; /* Espacio entre enlaces */
+    list-style-type: none; /* Eliminar puntos de lista */
+    margin: 0; /* Eliminar margen */
+    padding: 0; /* Eliminar padding */
+}
+
+nav ul li a {
+    text-decoration: none; /* Quitar subrayado de enlaces */
+    color: white; /* Color blanco para los enlaces */
+    font-weight: bold; /* Enlaces en negrita */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Subrayado cuando pasas el ratón por encima */
+}
