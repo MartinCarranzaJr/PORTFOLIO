@@ -36,6 +36,16 @@
     .carousel-caption p {
         display: none;  /* Oculta la descripción en dispositivos pequeños */
     }
+    .navbar {
+        flex-wrap: wrap; /* permite que los elementos se envuelvan */
+    }
+    .navbar-nav {
+        width: 100%; /* ocupa todo el ancho */
+        text-align: center; /* centra los elementos */
+    }
+    .nav-item {
+        flex-grow: 1; /* asegura que los elementos tengan el mismo tamaño */
+    }
 }
 
 /* Dispositivos medianos (tablets, 768px y menos) */

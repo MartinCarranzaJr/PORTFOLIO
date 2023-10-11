@@ -143,12 +143,6 @@ nav ul li.dropdown-contact > a {
 /* Responsividad para dispositivos móviles */
 /* Estilos por defecto para dispositivos móviles */
 @media (max-width: 768px) {
-    nav ul {
-        display: none; /* Ocultamos por defecto en móviles */
-        flex-direction: column; /* Los enlaces se apilan verticalmente */
-        align-items: center; /* Centramos los enlaces */
-    }
-
     nav ul.active {
         display: flex; /* Mostrar cuando esté activo */
     }
