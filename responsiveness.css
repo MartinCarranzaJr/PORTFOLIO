@@ -92,3 +92,14 @@
         margin: 10px; /* Espacio alrededor de cada proyecto */
     }
 }
+/* Para dispositivos móviles */
+@media (max-width: 480px) {
+    .dropdown-content {
+        width: 100%; /* Ocupará el 100% del ancho en dispositivos móviles */
+        position: static; /* Para que no flote sobre otros contenidos */
+    }
+
+    .dropdown:hover .dropdown-content {
+        transform: translateY(0);
+    }
+}

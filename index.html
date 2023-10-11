@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio, Martin Carranza</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
@@ -32,9 +38,31 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#about_me" class="about-link">About Me</a></li>
-                <li><a href="#portfolio" class="portfolio-link">Portfolio</a></li>
-                <li><a href="#contact" class="contact-link">Contact</a></li>
+                <!-- Inicio de menú desplegable -->
+                <li class="dropdown-aboutme">
+                    <a href="#">About Me</a>
+                    <div class="dropdown-content">
+                        <a href="https://www.linkedin.com/in/jos%C3%A9-mart%C3%ADn-carranza-76354a273/">LinkedIn</a>
+                        <a href="https://www.instagram.com/martincarranzajr/">Instagram</a>
+                        <a href="https://github.com/MartinCarranzaJr">GitHub</a>
+                    </div>
+                </li>
+                <li class="dropdown-portafolio">
+                    <a href="#">Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="https://github.com/MartinCarranzaJr/PokemonGame.git">Pokemon Game</a>
+                        <a href="https://github.com/MartinCarranzaJr/Currency-Converter.git">Currency Converter</a>
+                        <a href="https://github.com/MartinCarranzaJr/DecisionGame.git">Decision Game</a>
+                        <a href="https://github.com/MartinCarranzaJr/VoiceAssistant.git">VoiceAssistant</a>
+                    </div>
+                </li>
+                <li class="dropdown-contact">
+                    <a href="#">Contact</a>
+                    <div class="dropdown-content">
+                        <a href="Resume José Martín Carranza Rajo.pdf">My Resume</a>
+                        <a href="https://wa.me/50488361570">WhatsApp</a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
@@ -45,19 +73,19 @@
         <h3>#Electronic</h3>
     </section>
     <!--Sobre mi-->
-    <section id="about_me" class="about_me">
+    <section id="about_me" class="about_me" data-aos="fade-up" data-aos-delay="200">
         <div class="martin-image">
-        <img src="aboutme.jpg" alt="AboutMe-image">
+            <img src="aboutme.jpg" alt="AboutMe-image">
         </div>
         <div class="about_text">
-        <h2>About Me</h2>
-        <p> I am <strong>Jose Martin Carranza</strong>, an Electronic Engineer with a passion for hardware and programming. My previous work experiences have shown that I am a fast learner, 
-            having worked in the field of Industrial Mechanics. My love for technology and video games has driven me to want to learn and specialize in programming and hardware. 
-            With great enthusiasm, I assembled my first PC Gamer, which allowed me to deeply understand how a computer works, get to know all its components, and optimize the operating system for its peak performance. 
-            Thanks to this, I have been able to work independently as a computer technician. It also ignited a passion for programming, web design, and data science management using the Python language.
+            <h2>About Me</h2>
+            <p> I am <strong>Jose Martin Carranza</strong>, an Electronic Engineer with a passion for hardware and programming. My previous work experiences have shown that I am a fast learner, 
+                having worked in the field of Industrial Mechanics. My love for technology and video games has driven me to want to learn and specialize in programming and hardware. 
+                With great enthusiasm, I assembled my first PC Gamer, which allowed me to deeply understand how a computer works, get to know all its components, and optimize the operating system for its peak performance. 
+                Thanks to this, I have been able to work independently as a computer technician. It also ignited a passion for programming, web design, and data science management using the Python language.
 
-            I define myself as a very analytical person, which leads me to find solutions to new problems.
-        </p>
+                I define myself as a very analytical person, which leads me to find solutions to new problems.
+            </p>
         </div>
         <div class="skills">
             <h3>Programing Languages</h3>
@@ -90,55 +118,65 @@
     </section>
     <!--Proyectos para el portafolio-->
     <section id="portfolio" class="portfolio">
-        <h2>PORTFOLIO</h2>
-        <h3>A closer look</h3>
-        <div class="project-container">
-            <!-- Proyecto 1 -->
-            <div class="project">
-                <div class="project-image-container">
-                <img src="maxresdefault.jpg" alt="Pokemon Game">
+        <div class="container"> <!-- Contenedor agregado -->
+            <h2 class="text-center">PORTFOLIO</h2>
+            <h3 class="text-center">A closer look</h3>
+            <div class="row project-container">
+                
+                <!-- Proyecto 1 -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
+                    <div class="card bg-dark text-white">
+                        <img src="maxresdefault.jpg" alt="Pokemon Game" class="card-img-top img-fluid"> <!-- Clase img-fluid agregada -->
+                        <div class="card-body">
+                            <h4 class="card-title">Pokemon Game</h4>
+                            <p class="card-text">Small Pokémon game inspired by its Nintendo DS versions, become a Pokémon master!</p>
+                            <p><strong>Technology:</strong> Python</p>
+                            <a href="https://github.com/MartinCarranzaJr/PokemonGame.git" class="btn btn-success" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
                 </div>
-                <h4>Pokemon Game</h4>
-                <p>Small Pokémon game inspired by its Nintendo DS versions, become a Pokémon master!</p>
-                <p><strong>Tecnology:</strong> Python</p>
-                <a href="https://github.com/MartinCarranzaJr/PokemonGame.git" target="_blank">Ver en GitHub</a>
-            </div>
             
             <!-- Proyecto 2 -->
-            <div class="project">
-                <div class="project-image-container">
-                <img src="sddefault.jpg" alt="Voice Assistant">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
+                    <div class="card bg-dark text-white">
+                        <img src="assistant.jpg" alt="Voice Assistant" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h4 class="card-title">Voice Assistant</h4>
+                            <p class="card-text">Small code as a foundation to create a voice assistant or to speak with your computer.</p>
+                            <p><strong>Technology:</strong> Python</p>
+                            <a href="https://github.com/MartinCarranzaJr/VoiceAssistant.git" class="btn btn-success" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
                 </div>
-                <h4>Voice Assistant</h4>
-                <p>Small code as a foundation to create a voice assistant or to speak with your computer.</p>
-                <p><strong>Tecnology:</strong> Python</p>
-                <a href="https://github.com/MartinCarranzaJr/VoiceAssistant.git" target="_blank">Ver en GitHub</a>
-            </div>
-            
-            <!-- Proyecto 3 -->
-            <div class="project">
-                <div class="project-image-container">
-                <img src="currency.jpg" alt="Currency Converter">
+                <!-- Proyecto 3 -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
+                    <div class="card bg-dark text-white">
+                        <img src="currency.png" alt="Currency Converter" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h4 class="card-title">Currency Converter</h4>
+                            <p class="card-text">A basic currency converter program.</p>
+                            <p><strong>Technology:</strong> Python</p>
+                            <a href="https://github.com/MartinCarranzaJr/Currency-Converter.git" class="btn btn-success" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
                 </div>
-                <h4>Currency Converter</h4>
-                <p>A basic currency converter program.</p>
-                <p><strong>Tecnology:</strong> Python</p>
-                <a href="https://github.com/MartinCarranzaJr/Currency-Converter.git" target="_blank">Ver en GitHub</a>
-            </div>
-            
-            <!-- Proyecto 4 -->
-            <div class="project">
-                <div class="project-image-container">
-                <img src="decision.png" alt="Decision Game">
+
+                <!-- Proyecto 4 -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
+                    <div class="card bg-dark text-white">
+                        <img src="decision.jpg" alt="Decision Game" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h4 class="card-title">Decision Game</h4>
+                            <p class="card-text">A game based on your decisions, choose which path you want to take and reach the end of the story.</p>
+                            <p><strong>Technology:</strong> Python</p>
+                            <a href="https://github.com/MartinCarranzaJr/DecisionGame.git" class="btn btn-success" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
                 </div>
-                <h4>Decision Game</h4>
-                <p>A game based on your decisions, choose which path you want to take and reach the end of the story.</p>
-                <p><strong>Tecnology:</strong> Python</p>
-                <a href="https://github.com/MartinCarranzaJr/DecisionGame.git" target="_blank">Ver en GitHub</a>
             </div>
-        </div>
     </section>
-    <section id="contact" class="contact">
+    <!--Seccion Contact-->
+    <section id="contact" class="contact" data-aos="fade-up" data-aos-delay="200">
         <h2>Contact</h2>
         
         <!-- Detalles de Contacto -->
@@ -165,5 +203,7 @@
             <a href="Resume José Martín Carranza Rajo.pdf"><button>Download Resume</button></a>
         </div> 
     </section>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -1,56 +1,46 @@
 .portfolio {
-    text-align: center; /* Centramos el texto de los títulos */
-    background-color: #1A1A1A; /* Fondo color carbón */
-    padding: 2em 0; /* Espacio arriba y abajo para separar del contenido adyacente */
-}
-
-.project-container {
-    display: flex; /* Usaremos Flexbox para los proyectos */
-    justify-content: space-between; /* Espacio entre cada proyecto */
-    flex-wrap: wrap; /* Permite que los proyectos se envuelvan si no hay espacio */
-    margin: 2em 0; /* Espacio arriba y abajo */
-}
-
-.project {
-    flex: 1; /* Cada proyecto tendrá el mismo tamaño */
-    margin: 0 10px; /* Separación entre proyectos */
-    padding: 1em;
-    border-radius: 8px; /* Bordes redondeados */
-    position: relative;
-}
-
-.project img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* Las imágenes ocuparán todo el ancho del contenedor */
-    height: 100%; /* Las imágenes ocuparán todo el alto del contenedor */
-    object-fit: cover; /* Asegura que las imágenes cubran todo el espacio, recortándose según sea necesario */
-    border-radius: 6px; /* Bordes redondeados para las imágenes */
-}
-
-.project a {
-    color:green; /* El color que desees para los enlaces */
-    text-decoration: none; /* Elimina el subrayado */
-    display: block; /* Hace que el enlace sea un bloque */
-    margin-top: 1em; /* Espacio arriba */
-}
-
-.project-image-container {
-    width: 100%;
-    padding-bottom: 75%; /* Esto establece una relación de aspecto 4:3. Puedes ajustar según tus necesidades. */
-    position: relative; /* Para que la imagen se posicione en relación con este contenedor */
-    overflow: hidden; /* Esto asegura que si la imagen es demasiado grande, se recortará */
+    text-align: center; 
+    background-color: #1A1A1A;
+    padding: 2em 0;
 }
 
 .portfolio h2, .portfolio h3 {
     color: yellow;
 }
 
-.project:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-}
 #portfolio {
     border-bottom: 1px solid #800080;
+}
+
+.project-container {
+    margin: 2em 0;
+}
+
+.project-container .col-lg-3 {
+    display: flex;
+    align-items: stretch; /* Asegura que los hijos se estiren para llenar el contenedor */
+}
+
+.card { /* Actualizamos la clase para que afecte directamente a la tarjeta de Bootstrap. */
+    flex: 1; /* Permite que el cuerpo de la tarjeta se expanda y llene el espacio disponible */
+    display: flex;
+    flex-direction: column; /* Mantenemos dirección columnar para el contenido */
+    justify-content: space-between; /* Distribuye el contenido equitativamente */
+}
+
+.card img {
+    object-fit: contain;
+    border-radius: 6px;
+    max-width: 100%; /* Asegura que las imágenes sean responsivas. */
+}
+
+.card a {
+    color: #00FF00;  /* Cambiamos el color para que se distinga del fondo */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    color: #00CC00;  /* Un tono de verde un poco más oscuro al pasar el cursor */
 }

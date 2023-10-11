@@ -92,4 +92,5 @@
 }
 #about_me {
     border-bottom: 1px solid yellow;
+    min-height: 300px; /* o cualquier valor que sientas que sea adecuado */
 }
