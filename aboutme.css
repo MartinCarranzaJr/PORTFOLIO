@@ -24,13 +24,16 @@
     margin-top: 40px;
 }
 .skills {
-    margin-left: 200px;
+    margin-left: 180px;
     padding: 20px;
 }
 
 .skills h3 {
     margin-bottom: 10px;
     color: yellow;  /* Utilizamos amarillo como en la sección anterior */
+}
+.certificates {
+    align-items: center;
 }
 
 .skills ul {
