@@ -5,21 +5,15 @@
 }
 
 body {
-    background-color: #1A1A1A;
     color: #FFF;
     font-family: 'Poppins', sans-serif;
 }
 
-.portfolio {
-    font-family: 'Poppins', sans-serif;
-}
-
 header {
-    background-color: #000000; /* Mantenemos el fondo negro */
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    height: 60px;
+    height: 70px;
     padding: 0 20px;
     position: fixed;
     top: 0;
@@ -129,6 +123,22 @@ nav ul li.dropdown-contact > a {
     color: #008000; /* Verde para "Contact" */
 }
 
+/* Estilo para el fondo del dropdown */
+.navbar-dark .navbar-nav .dropdown-menu {
+    background-color: #343a40; /* Color de fondo negro de Bootstrap */
+}
+
+/* Estilo para el texto del dropdown */
+.navbar-dark .navbar-nav .dropdown-menu .dropdown-item {
+    color: #ffffff; /* Color de texto blanco */
+}
+
+/* Estilo para el hover del dropdown-item */
+.navbar-dark .navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar-dark .navbar-nav .dropdown-menu .dropdown-item:focus {
+    color: #000000; /* Color de texto negro */
+    background-color: #f8f9fa; /* Color de fondo claro de Bootstrap */
+}
 
 /* Responsividad para dispositivos móviles */
 /* Estilos por defecto para dispositivos móviles */
@@ -160,7 +170,6 @@ nav ul li.dropdown-contact > a {
         .menu-toggle {
             display: block;
         }
-    }
+    } 
 }
-
 

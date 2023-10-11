@@ -5,27 +5,7 @@
 }
 
 .portfolio h2, .portfolio h3 {
-    color: yellow;
-}
-
-#portfolio {
-    border-bottom: 1px solid #800080;
-}
-
-.project-container {
-    margin: 2em 0;
-}
-
-.project-container .col-lg-3 {
-    display: flex;
-    align-items: stretch; /* Asegura que los hijos se estiren para llenar el contenedor */
-}
-
-.card { /* Actualizamos la clase para que afecte directamente a la tarjeta de Bootstrap. */
-    flex: 1; /* Permite que el cuerpo de la tarjeta se expanda y llene el espacio disponible */
-    display: flex;
-    flex-direction: column; /* Mantenemos dirección columnar para el contenido */
-    justify-content: space-between; /* Distribuye el contenido equitativamente */
+    color: white;
 }
 
 .card img {
