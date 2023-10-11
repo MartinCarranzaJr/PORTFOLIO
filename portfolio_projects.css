@@ -24,3 +24,10 @@
     transform: scale(1.05);
     color: #00CC00;  /* Un tono de verde un poco más oscuro al pasar el cursor */
 }
+.carousel-caption {
+    top: auto;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}

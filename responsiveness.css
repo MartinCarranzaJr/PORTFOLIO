@@ -1,6 +1,41 @@
 /* Dispositivos pequeños (teléfonos, 600px y menos) */
 @media only screen and (max-width: 600px) {
+    /* Ajusta la altura del carrusel */
+    #portfolioCarousel .carousel-inner {
+        height: auto; 
+    }
+    
+    #portfolioCarousel img {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .carousel-inner {
+        padding: 0;
+    }
 
+    .carousel-caption {
+        top: 67%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .carousel-caption a {
+        display: block;
+        width: max-content;
+        margin: 10px auto 0 auto;
+        font-size: 0.8em;
+    }
+    
+    .carousel-caption h4 {
+        font-size: 0.8rem; 
+        margin-bottom: 10px;  /* Espacio entre el título y el botón */
+    }
+
+    .carousel-caption p {
+        display: none;  /* Oculta la descripción en dispositivos pequeños */
+    }
 }
 
 /* Dispositivos medianos (tablets, 768px y menos) */
