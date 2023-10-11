@@ -11,3 +11,11 @@ AOS.init({
     easing: 'ease'
   });
   
+  
+$(document).ready(function() {
+    // Escuchar el evento click en el botón de menú
+    $('.menu-toggle').on('click', function() {
+        // Al hacer clic, alternar la clase 'active' en la lista de navegación
+        $('nav ul').toggleClass('active');
+    });
+});

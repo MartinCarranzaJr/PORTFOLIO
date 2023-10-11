@@ -1,87 +1,86 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Esto hace que los paddings y borders no afecten el ancho total de un elemento */
-}
-/* Estilos generales para todo el documento */
-body {
-    background-color: #1A1A1A; /* Fondo color carbón */
-    color: #FFF; /* Color de texto blanco para que se lea bien con el fondo oscuro */
-    font-family: 'Poppins', sans-serif; /* Tipo de letra general */
+    box-sizing: border-box;
 }
 
-/* Estilos específicos para la sección de portfolio */
+body {
+    background-color: #1A1A1A;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+}
+
 .portfolio {
-    font-family: 'Poppins', sans-serif; /* Tipo de letra general */
+    font-family: 'Poppins', sans-serif;
 }
-/* Estilos generales para la barra de navegación */
+
 header {
-    background-color: #000000; /* Color negro */
+    background-color: #000000; /* Mantenemos el fondo negro */
     display: flex;
-    justify-content: center; /* Centramos los enlaces en el eje principal */
-    align-items: center; /* Alineamos los ítems al centro en el eje transversal */
-    height: 60px; /* Altura de la barra */
-    padding: 0 20px; /* Espaciado a los lados para que no quede todo pegado */
-    position: fixed;     /* Fijar la posición de la barra de navegación */
-    top: 0;              /* Alinea la barra de navegación en la parte superior de la ventana */
-    left: 0;             /* Alinea la barra de navegación al inicio (izquierda) de la ventana */
-    width: 100%;         /* Hace que la barra de navegación ocupe todo el ancho de la ventana */
-    z-index: 1000;       /* Coloca la barra de navegación por encima de otros elementos */
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
-/* Evitar que solape con la barra de navegacion */
+
 .info {
-    margin-top: 60px;   /* Ajusta este valor según la altura de tu barra de navegación */
-    background-image: url('background.jpeg');  /* Fondo de pantalla */
-    background-size: cover;  /* Esto hará que la imagen cubra toda el área de la sección */
-    background-repeat: no-repeat; /* Asegura que la imagen no se repita */
-    background-position: center center; /* Esto centrará la imagen en el centro de la sección */
+    margin-top: 60px;
+    background-image: url('background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     height: 600px;
     width: 100%;
 }
-/* Ajustes en texto */
-.info h3 {
-    padding-left: 30px;  /* Mueve el texto hacia la derecha. Ajusta este valor como quieras. */
-    padding-top: 20px;   /* Mueve el texto hacia abajo. Ajusta este valor como quieras. */
-    color: yellow;     /* Color de texto */
-}
-.info h1 {
+
+.info h3, .info h1 {
     padding-left: 30px;
     padding-top: 20px;
 }
-/* Estilos para los iconos */
+
+.info h3 {
+    color: yellow;
+}
+
 .icons-container {
     position: absolute;
-    left: 20px; /* Separación desde el lado izquierdo */
+    left: 20px;
 }
 
 .programming-languages i {
-    margin-right: 10px; /* Espacio entre íconos */
-    font-size: 24px; /* Tamaño de los íconos */
+    margin-right: 10px;
+    font-size: 24px;
 }
 
 nav ul {
     display: flex;
-    gap: 20px; /* Espacio entre enlaces */
-    list-style-type: none; /* Eliminar puntos de lista */
-    margin: 0; /* Eliminar margen */
-    padding: 0; /* Eliminar padding */
+    gap: 20px;
+    list-style-type: none;
 }
 
 nav ul li a {
-    text-decoration: none; /* Quitar subrayado de enlaces */
-    color: white; /* Color blanco para los enlaces */
-    font-weight: bold; /* Enlaces en negrita */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px; /* Agregado para un mejor efecto hover */
+    border-radius: 4px; /* Para que el efecto hover tenga bordes redondeados */
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Subrayado cuando pasas el ratón por encima */
+    background-color: rgba(0, 0, 0, 0.3); /* Efecto hover con fondo oscuro transparente */
 }
+
 .sticky {
-    background-color: rgba(0, 0, 0, 0.8); /* Puedes cambiar el color y la opacidad según prefieras */
-    transition: background-color 0.3s ease; /* Una transición suave al cambiar el color */
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
 }
-/* Estilos para dropdown-portafolio */
-.dropdown-portafolio {
+
+.dropdown-portafolio, .dropdown-aboutme, .dropdown-contact {
     position: relative;
     display: inline-block;
 }
@@ -92,11 +91,11 @@ nav ul li a:hover {
     background-color: #1A1A1A;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    width: 200px; 
-    border-radius: 4px; /* Bordes redondeados */
-    opacity: 0; /* Inicialmente será transparente */
-    transform: translateY(-20px); /* Movimiento inicial hacia arriba */
-    transition: opacity 0.3s, transform 0.3s; /* Transiciones para la opacidad y el movimiento */
+    width: 200px;
+    border-radius: 4px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s, transform 0.3s;
 }
 
 .dropdown-content a {
@@ -104,48 +103,64 @@ nav ul li a:hover {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    transition: background 0.2s; /* Transición para el fondo al pasar el ratón */
+    transition: background 0.2s;
 }
 
 .dropdown-content a:hover {
-    background: #333; /* Color de fondo al pasar el ratón */
+    background: #333;
 }
 
-.dropdown-portafolio:hover .dropdown-content {
-    display: block;
-    opacity: 1; /* Hace que el contenido sea visible */
-    transform: translateY(0); /* Mueve el contenido a su posición original */
-}
-.dropdown-portafolio > a {
-    color: #FFC0CB; /* Rosa pálido, ajusta según prefieras */
-}
-.dropdown-aboutme > a {
-    color: #800080; /* Esto es un morado común, puedes ajustarlo según prefieras */
-}
-.dropdown-contact > a {
-    color: #008000; /* Verde, puedes ajustarlo según prefieras */
-}
-.dropdown-aboutme {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content a:hover {
-    background: #333; /* Color de fondo al pasar el ratón */
-}
-
-.dropdown-aboutme:hover .dropdown-content {
-    display: block;
-    opacity: 1; /* Hace que el contenido sea visible */
-    transform: translateY(0); /* Mueve el contenido a su posición original */
-}
-.dropdown-contact {
-    position: relative;
-    display: inline-block;
-}
-
+.dropdown-aboutme:hover .dropdown-content,
 .dropdown-contact:hover .dropdown-content {
     display: block;
-    opacity: 1; /* Hace que el contenido sea visible */
-    transform: translateY(0); /* Mueve el contenido a su posición original */
+    opacity: 1;
+    transform: translateY(0);
 }
+
+nav ul li.dropdown-aboutme > a {
+    color: #800080; /* Morado para "About me" */
+}
+
+nav ul li.dropdown-portafolio > a {
+    color: #FFC0CB; /* Rosa pálido para "Portfolio" */
+}
+
+nav ul li.dropdown-contact > a {
+    color: #008000; /* Verde para "Contact" */
+}
+
+
+/* Responsividad para dispositivos móviles */
+/* Estilos por defecto para dispositivos móviles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Ocultamos por defecto en móviles */
+        flex-direction: column; /* Los enlaces se apilan verticalmente */
+        align-items: center; /* Centramos los enlaces */
+    }
+
+    nav ul.active {
+        display: flex; /* Mostrar cuando esté activo */
+    }
+
+    /* Añadir un botón para el menú en móviles */
+    .menu-toggle {
+        display: none; /* Inicialmente oculto */
+        cursor: pointer; /* Cambiar el cursor a "mano" */
+        font-size: 24px; /* Tamaño del ícono */
+        color: white;
+        position: absolute; /* Posición absoluta */
+        top: 15px;
+        right: 20px;
+        z-index: 1001; /* Asegurar que esté por encima de otros elementos */
+    }
+
+    /* Mostrar el botón de menú en móviles */
+    @media only screen and (max-width: 768px) {
+        .menu-toggle {
+            display: block;
+        }
+    }
+}
+
+
