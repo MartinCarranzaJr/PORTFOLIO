@@ -46,11 +46,47 @@
     .nav-item {
         flex-grow: 1; /* asegura que los elementos tengan el mismo tamaño */
     }
+    .info {
+        margin-top: 40px; 
+        height: auto; 
+        text-align: center; 
+        padding: 20px 10px; 
+    }
+
+    .info h1, .info h2 {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .cta-button {
+        margin-left: 0;
+    }
 }
 
 /* Dispositivos medianos (tablets, 768px y menos) */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
+    nav ul.active {
+        display: flex; /* Mostrar cuando esté activo */
+    }
 
+    /* Añadir un botón para el menú en móviles */
+    .menu-toggle {
+        display: none; /* Inicialmente oculto */
+        cursor: pointer; /* Cambiar el cursor a "mano" */
+        font-size: 24px; /* Tamaño del ícono */
+        color: white;
+        position: absolute; /* Posición absoluta */
+        top: 15px;
+        right: 20px;
+        z-index: 1001; /* Asegurar que esté por encima de otros elementos */
+    }
+
+    /* Mostrar el botón de menú en móviles */
+    @media only screen and (max-width: 768px) {
+        .menu-toggle {
+            display: block;
+        }
+    } 
 }
 
 /* Dispositivos grandes (ordenadores/laptops, 992px y menos) */
@@ -79,7 +115,8 @@
     }
     
     .info {
-        margin-top: 120px; /* Ajuste para el espacio que ocupa el header */
+        margin-top: 30px;
+        padding: 15px 5px;
     }
     
     .about_me {

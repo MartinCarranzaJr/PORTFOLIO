@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-gutter: stable;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 
 header {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     height: 70px;
     padding: 0 20px;
@@ -32,13 +33,36 @@ header {
     width: 100%;
 }
 
-.info h3, .info h1 {
+.info h1 {
+    font-size: 36px;
+    color: #FFFFFF;
     padding-left: 30px;
     padding-top: 20px;
 }
 
-.info h3 {
+.info h2 {
+    font-size: 50px;
     color: yellow;
+    padding-left: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+
+.cta-button {
+    display: inline-block;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #FFC700;
 }
 
 .icons-container {
@@ -140,30 +164,6 @@ nav ul li.dropdown-contact > a {
     background-color: #f8f9fa; /* Color de fondo claro de Bootstrap */
 }
 
-/* Responsividad para dispositivos móviles */
-/* Estilos por defecto para dispositivos móviles */
-@media (max-width: 768px) {
-    nav ul.active {
-        display: flex; /* Mostrar cuando esté activo */
-    }
-
-    /* Añadir un botón para el menú en móviles */
-    .menu-toggle {
-        display: none; /* Inicialmente oculto */
-        cursor: pointer; /* Cambiar el cursor a "mano" */
-        font-size: 24px; /* Tamaño del ícono */
-        color: white;
-        position: absolute; /* Posición absoluta */
-        top: 15px;
-        right: 20px;
-        z-index: 1001; /* Asegurar que esté por encima de otros elementos */
-    }
-
-    /* Mostrar el botón de menú en móviles */
-    @media only screen and (max-width: 768px) {
-        .menu-toggle {
-            display: block;
-        }
-    } 
+.navbar {
+    font-weight: bold;
 }
-
