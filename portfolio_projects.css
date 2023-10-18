@@ -31,3 +31,9 @@
     transform: translateX(-50%);
     text-align: center;
 }
+
+.portfolio h4, p {
+    color: white;
+    font-weight: bold;
+    background-color: #1A1A1A;
+}
