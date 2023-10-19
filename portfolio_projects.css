@@ -35,5 +35,12 @@
 .portfolio h4, p {
     color: white;
     font-weight: bold;
+}
+
+.description-t {
+    background-color: #1A1A1A;
+}
+
+.description {
     background-color: #1A1A1A;
 }
